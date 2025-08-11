@@ -12,6 +12,10 @@ function App() {
       <h1>{t('welcome')}</h1>
       <p>{t('description')}</p>
       <button onClick={() => alert(t('clickMe'))}>{t('clickMe')}</button>
+
+      <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+      <button onClick={() => i18n.changeLanguage('fr')}>FR</button>
+
     </div>
   );
 }
